@@ -1,0 +1,13 @@
+services:
+  example:
+    image: bond-crash
+    build:
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    network_mode: host
+    command: >
+      /bin/bash -c "
+      source /opt/ros/humble/setup.bash
+      && source /workspace/install/setup.bash
+      && ros2 launch bond_crash example.xml"

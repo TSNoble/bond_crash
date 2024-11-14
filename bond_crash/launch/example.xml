@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="bond_crash" exec="bond_node" name="bond_node_1"/>
+  <node pkg="bond_crash" exec="bond_node" name="bond_node_2"/>
+</launch>
